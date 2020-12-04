@@ -1,0 +1,33 @@
+﻿<Window x:Class="GridSplitTelerik.MainWindow"
+                xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+                Title="MainWindow" Height="350" Width="525">
+        <DockPanel >
+
+		<telerik:RadExpander Header="Select Donor" ExpandDirection="Left" HorizontalAlignment="Left" IsExpanded="True" Background="#BFDBFF" >
+			<Grid>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="Auto"/>
+					<ColumnDefinition Width="5"/>
+				</Grid.ColumnDefinitions>
+				<TextBlock  Text="Lorem ipsum dolor sit shit" Background="White"/>
+				<GridSplitter Grid.Column="1" Width="5" ResizeBehavior="PreviousAndCurrent"  ResizeDirection="Columns"/>
+			</Grid>
+		</telerik:RadExpander>
+
+		<telerik:RadExpander Header="Select Donor" ExpandDirection="Left" HorizontalAlignment="Left" IsExpanded="True" Background="#BFDBFF" >
+			<Grid>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="Auto"/>
+					<ColumnDefinition Width="5"/>
+				</Grid.ColumnDefinitions>
+				<TextBlock  Text="Lorem ipsum dolor sit shit" Background="White"/>
+				<GridSplitter Grid.Column="1" Width="5" ResizeBehavior="PreviousAndCurrent"  ResizeDirection="Columns"/>
+			</Grid>
+		</telerik:RadExpander>
+
+		<TextBlock  Text="Lorem ipsum dolor sit shit" Background="Green" />
+
+	</DockPanel>
+</Window>
